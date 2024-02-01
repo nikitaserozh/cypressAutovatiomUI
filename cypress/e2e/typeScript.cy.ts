@@ -12,6 +12,7 @@
 //examples
 let a = 5
 let b = 6
+let val = 7
 let number:number | string = 8
 let testString:string = "8"
 const booleanTest: boolean = false
@@ -21,7 +22,7 @@ const test1:any = NaN
 function string(a,b):string{
     return "a" + "b";//56 != 11
 }
-function string2(a:number,b:string):number{
+function string2(a:number,b:number):number{
     return +a + +b;//11
 }
 type stringTestType = {
@@ -34,7 +35,7 @@ function fullName(a:stringTestType,b:stringTestType):void {
 let obj = {
     key:val
 }
-string2(2,"2")
+string(2,"2")
 string2(2,2)
 
 //TS => JS
